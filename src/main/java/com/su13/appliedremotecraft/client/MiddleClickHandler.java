@@ -4,6 +4,7 @@ import appeng.api.stacks.AEFluidKey;
 import appeng.api.stacks.AEItemKey;
 import appeng.api.stacks.AEKey;
 import com.su13.appliedremotecraft.AppliedRemoteCraft;
+import com.su13.appliedremotecraft.TerminalFinder;
 import com.su13.appliedremotecraft.client.jei.ARCJeiPlugin;
 import com.su13.appliedremotecraft.network.RequestCraftPayload;
 import mezz.jei.api.ingredients.ITypedIngredient;
@@ -42,8 +43,13 @@ public final class MiddleClickHandler {
         if (runtime == null) {
             return;
         }
-        ClientPacketListener connection = Minecraft.getInstance().getConnection();
+        Minecraft mc = Minecraft.getInstance();
+        ClientPacketListener connection = mc.getConnection();
         if (connection == null || !connection.hasChannel(RequestCraftPayload.TYPE)) {
+            return;
+        }
+        // カード入りのターミナルが無ければ横取りせず、JEI等の通常動作に任せる
+        if (mc.player == null || TerminalFinder.findTerminal(mc.player) == null) {
             return;
         }
 

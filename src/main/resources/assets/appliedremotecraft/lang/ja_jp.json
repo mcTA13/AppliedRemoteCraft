@@ -1,6 +1,5 @@
 {
   "item.appliedremotecraft.remote_craft_card": "リモートクラフトカード",
-  "message.appliedremotecraft.no_terminal": "リモートクラフトカード入りのワイヤレスユニバーサルターミナルがありません",
   "message.appliedremotecraft.not_connected": "ワイヤレスユニバーサルターミナルがネットワークに接続されていません",
   "message.appliedremotecraft.not_craftable": "%s は自動クラフトできません"
 }
