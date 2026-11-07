@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    { "item": "ae2:advanced_card" },
+    { "item": "ae2:crafting_card" },
+    { "item": "ae2:wireless_receiver" }
+  ],
+  "result": {
+    "count": 1,
+    "id": "appliedremotecraft:remote_craft_card"
+  }
+}

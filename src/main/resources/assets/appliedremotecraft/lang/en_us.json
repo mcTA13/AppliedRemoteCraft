@@ -1,0 +1,6 @@
+{
+  "item.appliedremotecraft.remote_craft_card": "Remote Craft Card",
+  "message.appliedremotecraft.no_terminal": "No Wireless Universal Terminal with a Remote Craft Card found",
+  "message.appliedremotecraft.not_connected": "Wireless Universal Terminal is not connected to a network",
+  "message.appliedremotecraft.not_craftable": "%s cannot be autocrafted"
+}

@@ -1,0 +1,48 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+authors="su13"
+credits="Remote Craft Card texture is modified from Applied Energistics 2 textures ((c) 2020 Ridanisaurus Rid, (c) 2013-2020 AlgorithmX2 et al) and AE2WTLib textures ((c) 2021 Ridanisaurus Rid), licensed under CC BY-NC-SA 3.0."
+description='''
+Middle-click an item or fluid in JEI to request AE2 autocrafting through a Wireless Universal Terminal with the Remote Craft Card installed.
+'''
+
+[[dependencies.${mod_id}]]
+    modId="neoforge"
+    type="required"
+    versionRange="[${neo_version},)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="ae2"
+    type="required"
+    versionRange="[${ae2_version},)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="ae2wtlib"
+    type="required"
+    versionRange="[${ae2wtlib_version},)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="jei"
+    type="required"
+    versionRange="[19,)"
+    ordering="NONE"
+    side="CLIENT"
