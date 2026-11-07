@@ -15,8 +15,8 @@ Install the **Remote Craft Card** in a Wireless Universal Terminal (inventory or
 ## License
 
 - **Code**
-  - (c) su13
-  - All Rights Reserved
+  - (c) 2026 su13
+  - [MIT](LICENSE)
 - **Texture: `assets/appliedremotecraft/textures/item/remote_craft_card.png`**
   - Modified from [Applied Energistics 2](https://github.com/AppliedEnergistics/Applied-Energistics-2) textures
     - (c) 2020 [Ridanisaurus Rid](https://github.com/Ridanisaurus/), (c) 2013 - 2020 AlgorithmX2 et al
